@@ -24,7 +24,7 @@ module RR
       end
 
       def applies?
-        defined?(::Spec)
+        defined?(::Spec) && !defined?(::RSpec)
       end
 
       def hook
